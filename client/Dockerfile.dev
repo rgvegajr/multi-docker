@@ -1,0 +1,19 @@
+# base image 
+# file modified per teaching assistant Bobby to resolve error running in wsl2
+
+FROM node:16-alpine
+
+USER node
+RUN mkdir -p /home/node/app
+
+
+WORKDIR /home/node/app
+
+COPY --chown=node:node ./package.json ./
+# dependencies
+RUN npm install
+
+COPY --chown=node:node ./ ./ 
+
+# command
+CMD ["npm","run","start"]
