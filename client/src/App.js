@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Calc that Fibnatcho Number thingy demo for containers kubernetes</h1>
+          <h3 className="App-title">Calc that Fibnatcho Number thingy demo for containers kubernetes</h3>
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
